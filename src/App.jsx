@@ -20,7 +20,7 @@ function App() {
       <BrowserRouter>
       <Routes>
         <Route path='/admin' element={<Layout activeSideBar={activeSideBar} sideBarFnc={sideBarFnc}/>}>
-          <Route path='category' element={<TableCard2 active={activeSideBar} />}/>
+          <Route path='/admin/category' element={<TableCard2 active={activeSideBar} />}/>
           <Route path='/admin/edit-card' element={<EditPage active ={activeSideBar}  />}/>
           <Route index element={<HomePage/>}/>
         </Route>
