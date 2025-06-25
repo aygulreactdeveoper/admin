@@ -22,7 +22,7 @@ function App() {
         <Route path='/admin' element={<Layout activeSideBar={activeSideBar} sideBarFnc={sideBarFnc}/>}>
           <Route path='category' element={<TableCard2 active={activeSideBar} />}/>
           <Route path='edit-card' element={<EditPage active ={activeSideBar}  />}/>
-          <Route indexs element={<HomePage/>}/>
+          <Route index element={<HomePage/>}/>
         </Route>
         <Route path='/admin/login' element={<Login />}/>
       </Routes>
