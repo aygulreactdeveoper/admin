@@ -17,7 +17,7 @@ function App() {
 
   return (
     <>
-      <BrowserRouter basename='/admin'>
+      <BrowserRouter basename='/admin/'>
       <Routes>
         <Route path='/' element={<Layout activeSideBar={activeSideBar} sideBarFnc={sideBarFnc}/>}>
           <Route path='category' element={<TableCard2 active={activeSideBar} />}/>
