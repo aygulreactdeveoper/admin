@@ -19,12 +19,12 @@ function App() {
     <>
       <BrowserRouter>
       <Routes>
-        <Route path='/' element={<Layout activeSideBar={activeSideBar} sideBarFnc={sideBarFnc}/>}>
+        <Route path='/admin/' element={<Layout activeSideBar={activeSideBar} sideBarFnc={sideBarFnc}/>}>
           <Route path='/category' element={<TableCard2 active={activeSideBar} />}/>
           <Route path='/edit-card' element={<EditPage active ={activeSideBar}  />}/>
-          <Route path='//' element={<HomePage/>}/>
+          <Route path='/' element={<HomePage/>}/>
         </Route>
-        <Route path='/login' element={<Login />}/>
+        <Route path='/admin/login' element={<Login />}/>
       </Routes>
       </BrowserRouter>
     </>
